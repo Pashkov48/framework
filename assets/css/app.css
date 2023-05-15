@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+body p, body h5 {
+  margin: 0;
+  padding: 0;
+}
+body .main {
+  width: 40rem;
+}
+body .main .card-link .bi-suit-heart {
+  display: block;
+}
+body .main .card-link .bi-suit-heart-fill {
+  display: none;
+}
+body .main .card-link.like {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #dc3545;
+}
+body .main .card-link.like span {
+  display: block;
+  margin-left: 5px;
+}
+body .main .card-link.like.active {
+  color: #dc3545;
+}
+body .main .card-link.like.active .bi-suit-heart-fill {
+  display: block;
+}
+body .main .card-link.like.active .bi-suit-heart {
+  display: none;
+}
+body .main .bd-placeholder-img {
+  text-anchor: middle;
+  border-radius: 8px;
+}
+body .main .profile {
+  margin-top: 30px;
+  display: flex;
+}
+body .main .profile .profile__avatar {
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+body .main .profile .profile__info {
+  margin-left: 30px;
+}
+body .main .profile .profile__info--email {
+  margin-top: 10px;
+}
+body .main .profile .profile__info--registered {
+  font-size: 12px;
+}
+body .main .posts .card-img-top {
+  display: block;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=app.css.map */
