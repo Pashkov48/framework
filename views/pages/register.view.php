@@ -26,7 +26,6 @@ use App\Application\Alerts\Alert;
             <?php
         }
         ?>
-
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="text" name="email" class="form-control <?= Error::has('email') ? 'is-invalid' : '' ?>"
@@ -57,9 +56,8 @@ use App\Application\Alerts\Alert;
                    class="form-control <?= Error::has('password') ? 'is-invalid' : '' ?>" id="password_confirm">
         </div>
         <p>Есть аккаунт? <a href="/login">Войти</a></p>
-        <button type="submit" class="btn btn-success">Далее</button>
+        <button type="submit" class="btn btn-success mt-3">Далее</button>
     </form>
 </main>
-
 </body>
 </html>

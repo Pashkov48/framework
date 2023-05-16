@@ -6,6 +6,7 @@ use App\Application\Alerts\Alert;
 use App\Application\Alerts\Error;
 
 ?>
+
 <!doctype html>
 <html lang="<?= Config::get('app.lang') ?>">
 <head>
@@ -17,6 +18,7 @@ use App\Application\Alerts\Error;
     <?php View::component('nav'); ?>
     <h2 class="mb-4">Вход</h2>
     <form method="post" action="/login">
+
         <?php
         if (Alert::success()) {
             ?>
@@ -36,6 +38,7 @@ use App\Application\Alerts\Error;
             <?php
         }
         ?>
+
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" class="form-control <?= Error::has('email') ? 'is-invalid' : '' ?>"
@@ -54,9 +57,8 @@ use App\Application\Alerts\Error;
             </div>
         </div>
         <p>Нет аккаунта? <a href="/register">Регистрация</a></p>
-        <button type="submit" class="btn btn-primary">Войти</button>
+        <button type="submit" class="btn btn-primary mt-3">Войти</button>
     </form>
 </main>
-
 </body>
 </html>

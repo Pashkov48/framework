@@ -16,9 +16,15 @@ use App\Application\Auth\Auth;
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Лента</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/profile">Профиль</a>
-                </li>
+                <?php
+                if (Auth::check()) {
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">Профиль</a>
+                    </li>
+                    <?php
+                }
+                ?>
             </ul>
             <form action="/logout" method="post" class="d-flex">
                 <?php
@@ -32,7 +38,6 @@ use App\Application\Auth\Auth;
                     <?php
                 }
                 ?>
-
             </form>
         </div>
     </div>
